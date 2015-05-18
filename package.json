@@ -1,6 +1,7 @@
 {
-  "name": "jquery.placeholder",
+  "name": "jquery.placeholder.js",
   "version": "0.1.0",
+  "main": "jquery.placeholder.js",
   "description": "Useful placeholder for text input and textarea.",
   "repository": {
     "type": "git",
@@ -8,9 +9,14 @@
   },
   "keywords": [
     "placeholder",
+    "jquery-plugin",
     "hint"
   ],
-  "author": "felixexter",
+  "author": {
+    "name": "Felix Exter",
+    "email": "felixexter@ya.ru",
+    "url": "https://github.com/felixexter"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/felixexter/jquery.placeholder/issues"
