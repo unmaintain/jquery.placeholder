@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="imagetoolbar" content="no">
+		<meta name="msthemecompatible" content="no">
+		<meta name="cleartype" content="on">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<title>jQuery Placeholder</title>
+		<meta name="description" content="jQuery Placeholder">
+		<meta name="keywords" content="Useful placeholder for text input and textarea.">
+		<meta name="copyright" content="©felixexter">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			body {
+				background-color: #eee;
+			}
+			.h1 {
+				margin-top: 40px;
+				margin-bottom: 40px;
+				font-family: arial, sans-serif;
+				font-size: 24px;
+				line-height: 36px;
+				text-align: center;
+			}
+			.text-inputs {
+				margin-left: auto;
+				margin-right: auto;
+				width: 400px;
+				text-align: center;
+			}
+			.text-input-block {
+				position: relative;
+				margin-bottom: 40px;
+				display: inline-block;
+				width: 200px;
+				height: 32px;
+				background-color: #fff;
+				box-shadow: 0 0 1px rgba(0, 0, 0, .5)
+			}
+			.text-input {
+				position: relative;
+				z-index: 1;
+				padding-top: 7px;
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-bottom: 7px;
+				width: 100%;
+				height: 100%;
+				font-family: arial, sans-serif;
+				font-size: 16px;
+				line-height: 16px;
+				text-align: center;
+				color: #000;
+				border: none;
+				background: none;
+			}
+			.text-input-placeholder {
+				position: absolute;
+				z-index: 0;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				display: block;
+				font-family: arial, sans-serif;
+				font-size: 16px;
+				line-height: 32px;
+				color: #000;
+				text-align: center;
+				cursor: pointer;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				-o-user-select: none;
+				user-select: none;
+				-webkit-transition: .25s;
+				-moz-transition: .25s;
+				-ms-transition: .25s;
+				-o-transition: .25s;
+				transition: .25s;
+				will-change: all;
+			}
+			.text-input-placeholder_state_active {
+				opacity: 0;
+			}
+			.text-input-placeholder_pos_top {
+				-webkit-transform: translateY(-100%);
+				-moz-transform: translateY(-100%);
+				-ms-transform: translateY(-100%);
+				-o-transform: translateY(-100%);
+				transform: translateY(-100%);
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="h1">jQuery Placeholder Example</h1>
+		<div class="text-inputs">
+			<div class="text-input-block">
+				<input class="text-input js-placeholder" id="textInput1" type="text" name="text1" value="" title="Enter me...">
+				<label class="text-input-placeholder js-placeholder-text">Enter me...</label>
+			</div>
+			<div class="text-input-block">
+				<input class="text-input js-placeholder" id="textInput2" type="text" name="text2" value="" title="Name">
+				<label class="text-input-placeholder js-placeholder-text">Name</label>
+			</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="jquery.placeholder.min.js"></script>
+		<script>
+			$(function () {
+				$('#textInput1').placeholder();
+				$('#textInput2').placeholder({
+					activeClass: 'text-input-placeholder_pos_top'
+				});
+			});
+		</script>
+	</body>
+</html>
