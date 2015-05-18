@@ -1,0 +1,25 @@
+{
+  "name": "jquery.placeholder.js",
+  "main": "jquery.placeholder.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/felixexter/jquery.placeholder",
+  "authors": [
+    "felixexter <felixexter@ya.ru>"
+  ],
+  "description": "Useful placeholder for text input and textarea.",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "placeholder",
+    "hint"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "!jquery.placeholder.js",
+    "!jquery.placeholder.min.js"
+  ]
+}
