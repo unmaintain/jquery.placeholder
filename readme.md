@@ -1,3 +1,5 @@
+> ### ⚠️ This project in not maintained! Fork for any improvements!
+
 # jquery.placeholder.js
 
 Useful placeholder for text input and textarea.
